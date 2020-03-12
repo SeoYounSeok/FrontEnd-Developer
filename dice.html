@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-  
-<script>
 
-  var cwidth = 400;
-  var cheight = 300;
-  var dicex = 50;
-  var dicey = 50;
-  var dicewidth = 100;
-  var dicehegiht = 100;
-  var dotrad=6;
-  var ctx;
+  <script>
 
-function init(){
+    var cwidth = 400;
+    var cheight = 300;
+    var dicex = 50;
+    var dicey = 50;
+    var dicewidth = 100;
+    var dicehegiht = 100;
+    var dotrad = 6;
+    var ctx;
 
-  var ch = 1+Math.floor(Math.random()*6);
-  drawface(ch);
-}
+    function init() {
 
-function drawface(n){
+      var ch = 1 + Math.floor(Math.random() * 6);
+      drawface(ch);
+    }
 
-ctx = document.getElementById('canvas').getContext('2d');
+    function drawface(n) {
 
-ctx.lineWidth = 5;
-ctx.clearRect(dicex,dicey,dicewidth,dicehegiht);
-ctx.strokeRect(dicex,dicey,dicewidth,dicehegiht);
-ctx.fillstyle="#009966";
+      ctx = document.getElementById('canvas').getContext('2d');
 
-switch(n){
-  case 1:
-    draw1();
-    break;
-  case 2:
-    draw2();
-    break;
-  case 3:
-    draw2();
-    draw1();
-    break;
-  case 4:
-    draw4();
-    break;
-  case 5:
-    draw4();
-    draw1();
-    break;
-    
-  case 6:
-    draw4();
-    draw2mid();
+      ctx.lineWidth = 5;
+      ctx.clearRect(dicex, dicey, dicewidth, dicehegiht);
+      ctx.strokeRect(dicex, dicey, dicewidth, dicehegiht);
+      ctx.fillstyle = "#009966";
 
-    break;
+      switch (n) {
+        case 1:
+          draw1();
+          break;
+        case 2:
+          draw2();
+          break;
+        case 3:
+          draw2();
+          draw1();
+          break;
+        case 4:
+          draw4();
+          break;
+        case 5:
+          draw4();
+          draw1();
+          break;
 
+        case 6:
+          draw4();
+          draw2mid();
 
-}
-}
-  
-// 주사위 그림
-
-function draw1(){
-  var dotx;
-  var doty;
-  ctx.beginPath();
-
-  dotx = dicex + 0.5*dicewidth; // 중앙
-  doty = dicey + 0.5*dicehegiht;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  ctx.closePath();
-  ctx.fill();
-}
-
-function draw2(){
-  var dotx;
-  var doty;
-  ctx.beginPath();
-
-  dotx = dicex + 3*dotrad; 
-  doty = dicey + 3*dotrad;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  dotx = dicex + dicewidth  - 3*dotrad;  
-  doty = dicey + dicehegiht - 3*dotrad;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  
-  
-  
-  ctx.closePath();
-  ctx.fill();
-}
+          break;
 
 
-function draw4(){
-  var dotx;
-  var doty;
+      }
+    }
 
-  ctx.beginPath();
-  dotx = dicex + 3*dotrad; 
-  doty = dicey + 3*dotrad;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  dotx = dicex + dicewidth  - 3*dotrad;  
-  doty = dicey + dicehegiht - 3*dotrad;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  ctx.closePath();
-  ctx.fill();
+    // 주사위 그림
 
-  ctx.beginPath();
-  dotx = dicex + 3*dotrad; 
-  doty = dicey + dicehegiht - 3*dotrad;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  dotx = dicex + dicewidth  - 3*dotrad;  
-  doty = dicey +  3*dotrad;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  ctx.closePath();
-  ctx.fill();
+    function draw1() {
+      var dotx;
+      var doty;
+      ctx.beginPath();
 
-}
+      dotx = dicex + 0.5 * dicewidth; // 중앙
+      doty = dicey + 0.5 * dicehegiht;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+    }
 
-function draw2mid(){
-  var dotx;
-  var doty;
+    function draw2() {
+      var dotx;
+      var doty;
+      ctx.beginPath();
 
-  ctx.beginPath();
-  dotx = dicex + 3*dotrad; 
-  doty = dicey + 0.5*dotrad;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  dotx = dicex + dicewidth  - 3*dotrad;  
-  doty = dicey + 0.5*dicehegiht;
-  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
-  ctx.closePath();
-  ctx.fill();
-}
+      dotx = dicex + 3 * dotrad;
+      doty = dicey + 3 * dotrad;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      dotx = dicex + dicewidth - 3 * dotrad;
+      doty = dicey + dicehegiht - 3 * dotrad;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
 
-    </script>
+
+
+      ctx.closePath();
+      ctx.fill();
+    }
+
+
+    function draw4() {
+      var dotx;
+      var doty;
+
+      ctx.beginPath();
+      dotx = dicex + 3 * dotrad;
+      doty = dicey + 3 * dotrad;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      dotx = dicex + dicewidth - 3 * dotrad;
+      doty = dicey + dicehegiht - 3 * dotrad;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.beginPath();
+      dotx = dicex + 3 * dotrad;
+      doty = dicey + dicehegiht - 3 * dotrad;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      dotx = dicex + dicewidth - 3 * dotrad;
+      doty = dicey + 3 * dotrad;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+
+    }
+
+    function draw2mid() {
+      var dotx;
+      var doty;
+
+      ctx.beginPath();
+      dotx = dicex + 3 * dotrad;
+      doty = dicey + 0.5 * dotrad;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      dotx = dicex + dicewidth - 3 * dotrad;
+      doty = dicey + 0.5 * dicehegiht;
+      ctx.arc(dotx, doty, dotrd, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+    }
+
+  </script>
 </head>
 
 
@@ -141,8 +142,8 @@ function draw2mid(){
 
   </canvas>
 
-    
+
 
 </body>
 
-</html> 
+</html>
