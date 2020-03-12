@@ -58,8 +58,84 @@ switch(n){
 }
 }
   
+// 주사위 그림
+
+function draw1(){
+  var dotx;
+  var doty;
+  ctx.beginPath();
+
+  dotx = dicex + 0.5*dicewidth; // 중앙
+  doty = dicey + 0.5*dicehegiht;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  ctx.closePath();
+  ctx.fill();
+}
+
+function draw2(){
+  var dotx;
+  var doty;
+  ctx.beginPath();
+
+  dotx = dicex + 3*dotrad; 
+  doty = dicey + 3*dotrad;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  dotx = dicex + dicewidth  - 3*dotrad;  
+  doty = dicey + dicehegiht - 3*dotrad;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  
+  
+  
+  ctx.closePath();
+  ctx.fill();
+}
+
+
+function draw4(){
+  var dotx;
+  var doty;
+
+  ctx.beginPath();
+  dotx = dicex + 3*dotrad; 
+  doty = dicey + 3*dotrad;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  dotx = dicex + dicewidth  - 3*dotrad;  
+  doty = dicey + dicehegiht - 3*dotrad;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  ctx.closePath();
+  ctx.fill();
+
+  ctx.beginPath();
+  dotx = dicex + 3*dotrad; 
+  doty = dicey + dicehegiht - 3*dotrad;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  dotx = dicex + dicewidth  - 3*dotrad;  
+  doty = dicey +  3*dotrad;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  ctx.closePath();
+  ctx.fill();
+
+}
+
+function draw2mid(){
+  var dotx;
+  var doty;
+
+  ctx.beginPath();
+  dotx = dicex + 3*dotrad; 
+  doty = dicey + 0.5*dotrad;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  dotx = dicex + dicewidth  - 3*dotrad;  
+  doty = dicey + 0.5*dicehegiht;
+  ctx.arc(dotx,doty,dotrd,0,Math.PI*2,true);
+  ctx.closePath();
+  ctx.fill();
+}
+
     </script>
 </head>
+
+
 <body>
 
     
