@@ -1,0 +1,12 @@
+### DOCTYPE(DTD, 버전지정)
+마크업 언어에서 문서 형식을 정의합니다.
+-> 어떤 버전을 사용하고 있는지 알려주는 형식
+-> <!DOCTYPE html> == "HTML5 을 사용하고 있습니다." 라는 뜻
+
+### META(웹 페이지의 정보)
+기타 모든 정보를 표시하는 정보를 나타내는 빈 태그
+'''
+<meta charset="UTF-8">
+<meta name="author" content="홍길동">
+<meta name="description" content="우리 사이트가 최고">
+'''
