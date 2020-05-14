@@ -1,4 +1,4 @@
-### JavaScript
+### JavaScript (5.24 react etc)
 
 추가할 예정
 
