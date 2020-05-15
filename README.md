@@ -1,6 +1,6 @@
-# JavaScript + TypeScript (5.24 react etc) - 참고 사이트 
+## JavaScript + TypeScript (5.24 react etc) - 참고 사이트 
 
-## 출처  
+### 출처  
 
 ### < 우아한 형제들 기술 블로그 > 
 https://woowabros.github.io/  
