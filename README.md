@@ -15,4 +15,7 @@ https://medium.com/@codesquad_yoda/%EC%9B%B9-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%9
 https://learnjs.vlpt.us/  
 
 ### < 삼성 SW 아카데미 4기 >  
-https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp
+https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp  
+
+### < 참고 : it 사이트 목록 > 
+https://blog.mogata.com/10  
