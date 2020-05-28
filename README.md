@@ -19,3 +19,6 @@ https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp
 
 ### < 참고 : it 사이트 목록 > 
 https://blog.mogata.com/10  
+
+### < 주니어 개발자 정보 > + 책 샀어요.
+https://github.com/jojoldu/junior-recruit-scheduler
