@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/43161245/83331959-af3c8680-a2d3-11ea-87c8-e8a9fb934423.png)
 
-## JavaScript + TypeScript (5.24 react etc) - 참고 사이트 
+## JavaScript + TypeScript (react etc) - 참고 사이트 
 
 ### 출처  
 
