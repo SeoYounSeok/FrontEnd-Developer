@@ -32,4 +32,36 @@ EX) JAVSCRIPT 개발 중에 Alert 를 생각해보자.
   - HEAD : HEADER 정보 조회 (HEAD)
 
 ```  
-###
+
+### REST 구성요소
+```
+
+1. 자원(Resource) : URI
+    - 모든 자원에 고유한 ID가 존재하고, 이 자원은 서버에 존재한다.
+    - 자원을 구별하는 ID는 HTTP URI 다.
+    - Client 는 URI를 이용해서 자원을 지정하고 해당 자원의 상태(정보)에 대한 조작을 서버에 요청한다.
+2. 행위(Verb) : HTTP Method
+    - HTTP 프로토콜은 GET,POST,PUT,DELETE 와 같은 메서드를 제공한다.
+3. 표현(Representation of Resource)
+    - Client 가 자원의 상태에 대한 조작을 요청하면 서버는 이에 적절한 응답을 보낸다.
+    - REST에 하나의 자원은 json,XML 등 여러 형태의 응답으로 나타내어 질 수 있다.
+    
+```
+### REST API
+
+```
+* REST API 
+    - REST 기반으로 서비스 API를 구현한 것
+    - 최근 OPEN API, 마이크로 서비스 등을 제공하는 업체 대부분은 REST API를 제공한다.
+```
+
+### RESTful
+
+```
+* RESTful이란
+    - 일반적으로 REST라는 아키텍처를 구현하는 웹 서비스를 나타내는 위해 사용되는 용어이다.
+```
+
+![image](https://user-images.githubusercontent.com/43161245/83777187-17b8a880-a6c4-11ea-9957-53056af5a8d2.png)
+
+    
