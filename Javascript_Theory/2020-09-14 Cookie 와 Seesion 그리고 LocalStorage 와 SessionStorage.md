@@ -75,7 +75,7 @@
 ```  
  
 
-=> 다음편 [2020-09-14 Cookie 와 Seesion 그리고 LocalStorage 와 SessionStorage - 2.md](https://github.com/SeoYounSeok/ManToMen-WEB-Angular7/blob/master/src/app/services/data.service.ts)
+=> 다음편 [2020-09-14 HTTP 와 Token - 2.md](https://github.com/SeoYounSeok/FrontEnd-Developer/blob/master/Javascript_Theory/2020-09-14%20HTTP%20%EC%99%80%20Token%20-%202.md)
 
 ```
 https://medium.com/@erwinousy/%EC%BF%A0%ED%82%A4-vs-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-28b8db2ca7b2
