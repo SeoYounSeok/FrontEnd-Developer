@@ -6,5 +6,10 @@
 ```
 
 #### 참고사이트
-##### [도타비 문제은행](https://www.gunsys.com/cbt_list/index.php?cbt=gisa) - 2021.3회차 1
+##### [도타비 문제은행](https://www.gunsys.com/cbt_list/index.php?cbt=gisa)
 ##### [수제비-IT 커뮤니티](https://cafe.naver.com/soojebi)
+
+##### 2022-04-15
+```
+- OO 기업 필기 시험 일자입니다. 잘 보고 오겠습니다.
+```
